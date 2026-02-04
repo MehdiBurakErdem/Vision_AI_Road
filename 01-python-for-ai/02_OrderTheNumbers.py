@@ -17,8 +17,11 @@ if(startNumber <= endNumber):
 
 print()
 fruits = ["Grape","Orange","Stawbery","Cherry","Melon","Pineapple","Watermelon","Apple"]
-for item in fruits:     #fruits yerine direk bir string de yazabiliriz ek olarak range(8) veya range(0,8,2) tabi fruits[item]olacak
+newfruits = [item.upper() for item in fruits]
+
+for item in newfruits:     #fruits yerine direk bir string de yazabiliriz ek olarak range(8) veya range(0,8,2) tabi fruits[item]olacak
     print(item, end= " ")
+
 else: #8 kere sorugu var 9 yok sadece for bittiği için else de çalışır eğer break olsa idi içeride o zaman çalışmazdı else. While-else de de aynı durum var
     print("\nHepsi yazildi")
 
