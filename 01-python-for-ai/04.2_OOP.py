@@ -13,7 +13,7 @@ class Person():
     def display_info(self):
         return f"{self.name} is {self.age} years old"
     
-#getter - setter 
+#getter - setter ve function deleter var @aynı olacak üstteki ile(bizim örnekte @Getname.deleter) anncak burada kullanmadım
 class Student:
     def __init__(self,a):
         self._name = a #_ ile protected, __ile private değişken kullanırız(Bunlar erişim belirleyici
