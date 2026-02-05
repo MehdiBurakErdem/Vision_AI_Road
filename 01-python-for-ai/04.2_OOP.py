@@ -25,7 +25,7 @@ class Student:
     @GetName.setter
     def SetName(self,new_name): #Burada da aynı şekilde name sadece
         if not new_name:
-            raise ValueError("Name connot be empty!") #Exception
+            raise ValueError("Name connot be empty!") #Exception gibi düşünebiliriz, burada kendi hata kodunu üretiyorsun ValueError sonrasında try except ile tutabilirsin 06'da detaylı öğrenebilirsiniz
         self._name = new_name
 
 

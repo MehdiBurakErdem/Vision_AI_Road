@@ -4,7 +4,7 @@ class PhoneBook:
     FILE_NAME = "phone_book_contacts.txt"
     def __init__(self):
         if not os.path.exists(self.FILE_NAME):
-            with open(self.FILE_NAME, "w", encoding="utf-8") as f:
+            with open(self.FILE_NAME, "w", encoding="utf-8") as f:  # f = open(self.FILE_NAME... ) olarak da yaparız diğer dillerde olduğu gibi ama sonrasında f.close() yapmak gerekir 
                 pass
 
     def add_contact(self, name, surname, number):
