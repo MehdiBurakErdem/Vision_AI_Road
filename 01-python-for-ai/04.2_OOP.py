@@ -4,7 +4,7 @@ class Person():
         self.name = name
         self.age = age
     
-    @classmethod    #decorator functions
+    @classmethod    #decorator functions 08'de inceliyoruz 
     def birth_year(cls,name,birth_year):
         current_year = 2026
         calculated_year = current_year - birth_year
