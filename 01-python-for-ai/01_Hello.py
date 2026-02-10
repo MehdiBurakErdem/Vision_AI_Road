@@ -5,11 +5,13 @@ i = 0 #x string olduğunu, i ise integar olduğunu görebiliyoruz
 
 z = ["1", 2, "3", 4] # liste -> geniş bu (Mutable)
 k = ("2", 5 , 6) # Tuple -> sert değiştirilemez(Immutable) ancak dolaylı olarak yani tekrar oluşturarak değiştirilebilir k = list(k) -> add.. -> k = tuple(k). Config ayarlarında kullanılır mesela config = (1920, 1080, 60) ve ileride değiştirilmeye çalışıldığın da direk olarak hatayı algılar
+p = {1,"Two",3,"Four",5,1,"Two"} #Set -> De değiştirilemez farkı ise bu sıralı değil ve tekrarlanamaz (benzensiz verileri tekrarları yazmaz)
 
 z[1] = "CHANGED"
 z.append(99)
 z.remove("3")
-
+print(f"This is set {p} -> len is {len(p)}")
+#p[1] diye bir şey yok çünkü sıralı değil
 d = {"a": 1, "b": 2} #dict (Mutable)
 d["c"] = 3
 d["a"] = 99

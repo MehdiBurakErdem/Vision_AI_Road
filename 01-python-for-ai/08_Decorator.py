@@ -43,9 +43,36 @@ def fast_function(n): # Fonksiyonlar algoritmik olarak aynıdır,sadece input k�
 def faster_function():
     print("I have already done my jobs")
 
-slow_function(10000000)
-fast_function(1000)
+slow_function(1000000)
+fast_function(100)
 faster_function()
 
 #Örnek3
-#İs coming tomorrow
+def flexible_decorator(func):
+    def wrapper(*args,**kwargs):
+        print(f"Function name: {func.__name__}")
+        if(args):
+            print(f"Args= {args}")
+        if(kwargs):
+            print(f"Kwargs= {kwargs}")
+        result = func(*args,**kwargs)
+        print(f"{func.__name__.capitalize()} funtion's result is {result}\n")
+        return result
+    return wrapper
+
+
+@flexible_decorator
+def add(x,y):
+    return x+y
+
+@flexible_decorator
+def greet(name,age,country):
+    return f"Hi {name}, you are {age} years old and your country is {country}"
+
+@flexible_decorator
+def multiply_and_sum(*numbers,factor):
+    return sum(numbers)*factor
+
+add(3,4)
+greet("Mehdi Burak", age=22, country="Türkiye")
+multiply_and_sum(2,5,7,1,factor=3)
