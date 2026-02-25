@@ -10,4 +10,5 @@ We can learn together - step by step
 +-– Kaggle: [Link](https://www.kaggle.com/)
 +-- W3: [Link](https://www.w3schools.com/python/python_ml_multiple_regression.asp)
 
-- Additional inspiration: Site Adı – Link
+- Additional inspiration: 
++-- Open Source Computer Vision – [Link](https://docs.opencv.org/3.4/d4/d73/tutorial_py_contours_begin.html)
